@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+	[bootloader] fsbl.elf
+	fpga/phenix_devkit_pl.bit
+	u-boot.elf
+}
