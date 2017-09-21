@@ -1,6 +1,7 @@
 #PhenixPro_Devkit_Platform
 
-File/Dir Introduction
+## File/Dir Introduction
+
 -   BOOT.bin:             ZYNQ boot file
 -   create_boot.sh:     script that create ZYNQ boot file
 -   devicetree.dtb:      Linux devicetree
@@ -13,3 +14,26 @@ File/Dir Introduction
 -   u-boot.elf:             uboot image 
 -   uEnv.txt:                uboot parameters 
 -   vivado_prj.tar.bz2:   vivado project
+
+## Quick Start
+
+Develop environment Ubuntu 16.04
+
+1. Divide the SD card into two partitions, Boot and rootfs for example
+
+2. Copy these files to Boot partition:
+   - BOOT.bin
+   - devicetree.dtb
+   - uEnv.txt
+   - uImage
+
+3. Install ubuntu core filesystem to SD Card:
+
+   ```
+   sudo tar -xpf filesystem/ubuntu-core-16.04-robsense.tar.bz2 -C /media/[PC username]/rootfs
+   umount /media/[PC username]/*
+   ```
+
+There is a pre-build Ardupilot in ubuntu core filesystem, and it will start automatically after ubuntu core boot-up.
+
+**PS: ubuntu core default user: robsense, password: robsense**

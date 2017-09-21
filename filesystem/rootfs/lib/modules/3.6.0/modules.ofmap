@@ -1,3 +1,0 @@
-# of module          name                 type                 compatible
-zynq_remoteproc      *                    *                    xlnx,zynq_remoteproc
-mb_remoteproc        *                    *                    xlnx,mb_remoteproc
