@@ -1,0 +1,1 @@
+bootargs=console=ttyPS1,115200 maxcpus=2 ramdisk_size=40000000 root=/dev/ram rw earlyprintk

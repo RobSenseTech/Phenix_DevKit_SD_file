@@ -17,14 +17,16 @@
 
 ## Quick Start
 
-Develop environment Ubuntu 16.04
+PC Develop environment Ubuntu 16.04
+
+### Ubuntu Core
 
 1. Divide the SD card into two partitions, Boot and rootfs for example
 
 2. Copy these files to Boot partition:
    - BOOT.bin
    - devicetree.dtb
-   - uEnv.txt
+   - filesystem/ubuntu-core/uEnv.txt
    - uImage
 
 3. Install ubuntu core filesystem to SD Card:
@@ -37,3 +39,15 @@ Develop environment Ubuntu 16.04
 There is a pre-build Ardupilot in ubuntu core filesystem, and it will start automatically after ubuntu core boot-up.
 
 **PS: ubuntu core default user: robsense, password: robsense**
+
+### Ramdisk
+
+1. Copy these files to SD Card:
+   - BOOT.bin
+   - devicetree.dtb
+   - uImage
+   - filesystem/ramdisk/uramdisk.image.gz
+   - filesystem/ramdisk/uEnv.txt
+
+There is a pre-build Ardupilot in ramdisk filesystem, and it will start automatically after Linux boot-up.
+
