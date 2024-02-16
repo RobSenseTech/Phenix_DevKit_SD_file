@@ -1,4 +1,4 @@
-#PhenixPro_Devkit_Platform
+# Phenix_Devkit_Platform
 
 ## File/Dir Introduction
 
@@ -17,7 +17,7 @@
 
 ## Quick Start
 
-PC Develop environment Ubuntu 16.04
+For PC Develop environment, it should be Ubuntu 16.04
 
 ### Ubuntu Core
 
